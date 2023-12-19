@@ -59,7 +59,7 @@ lectures/week1_data
 	
 **Course location:** 3025 Campus Instructional Facility
 
-**Office hours**: 12pm - 1pm on Wednesdays (Zoom link: )
+**Office hours**: 2pm - 3:30pm on Wednesdays (Zoom link: https://illinois.zoom.us/j/85168947802?pwd=NUhQL2ROYXh6VHZMNmpXeWY5VzhyQT09)
 
 **TA**: Eduardo Cardenas-Torres
 
