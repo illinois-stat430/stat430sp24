@@ -1,4 +1,5 @@
 
+
 # Course Resources
 
 The **stat430sp24** GitHub repository contains all information about our STAT 430 course.
@@ -59,7 +60,7 @@ lectures/week1_data
 	
 **Course location:** 3025 Campus Instructional Facility
 
-**Office hours**: 2pm - 3:30pm on Wednesdays (Zoom link: https://illinois.zoom.us/j/85168947802?pwd=NUhQL2ROYXh6VHZMNmpXeWY5VzhyQT09)
+**Office hours**: 2pm - 3pm on Wednesdays (Zoom link: https://illinois.zoom.us/j/85168947802?pwd=NUhQL2ROYXh6VHZMNmpXeWY5VzhyQT09)
 
 **TA**: Eduardo Cardenas-Torres
 
