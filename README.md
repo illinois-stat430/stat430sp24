@@ -164,7 +164,7 @@ and so on
 
 #### Attendance and Course Content
 
-Attendance will be a course requirement. There will be 15 lectures and you will receive 10 points for each lecture you attend, up to 130 points. Thus you are allowed to miss up to 2 lectures with no penalty.  There will be a signup sheet that is distributed at the beginning of class, you need to sign your name to verify your presence in class. Let your instructor know in advance if you cannot attend any class. 
+Attendance will be a course requirement. There will be 29 lectures and you will receive 5 points for each lecture you attend, up to 130 points. Thus you are allowed to miss up to 3 lectures with no penalty.  There will be a signup sheet that is distributed at the beginning of class, you need to sign your name to verify your presence in class. Let your instructor know in advance if you cannot attend any class. 
 
 
 #### Labs
