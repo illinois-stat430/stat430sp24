@@ -64,7 +64,7 @@ lectures/week1_data
 
 **TA**: Eduardo Cardenas-Torres
 
-**TA Office hours**: 1pm - 3pm on Fridays (Zoom link: )
+**TA Office hours**: 12pm - 2pm on Fridays (Zoom link: https://illinois.zoom.us/j/82122302337?pwd=V2RScVpEVTVCb3d2enl2SDZGcDkwZz09)
 
 **Course website**: https://github.com/illinois-stat430/stat430sp24
 
