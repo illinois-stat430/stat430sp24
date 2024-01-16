@@ -319,9 +319,6 @@ A list of the designated University employees who, as counselors, confidential a
  [Underestimating the Fog](https://sabr.org/research/article/underestimating-the-fog/), A Revised Look at Clutch Hitting parts [1](https://www.baseballprospectus.com/news/article/38398/prospectus-feature-revised-look-clutch-hitting-part-1/) and [2](https://www.baseballprospectus.com/news/article/38519/prospectus-feature-revised-look-clutch-hitting-part-2/), and [Clutch Hitting Revisited](https://sabr.org/journal/article/clutch-hitting-revisited/) -->
 
 
-### possible speakers
-
-
 ### Schedule (subject to change)
 
 * Week 1 [01/16 (lecture), 01/18 (lab)]
