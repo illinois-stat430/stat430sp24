@@ -330,7 +330,7 @@ A list of the designated University employees who, as counselors, confidential a
   + **Reading**: CH 1 and 2 in Analyzing Baseball Data with R (data sets and data wrangling)
   + **Lab 1** assigned this week, due on 02/02 at 11:59 pm
 
-* Week 2 [01/23 (lecture), 01/25 (lab)]
+* Week 2 [01/23 (lecture), 01/25 (speaker)]
   + **Reading**: course slides
   + **Reading**: CH 1 and 2 in Analyzing Baseball Data with R (data sets and data wrangling)
   + **Reading**: [A Statistical Look at Roger Clemens’ Pitching Career](https://repository.upenn.edu/cgi/viewcontent.cgi?article=1044&context=statistics_papers)
@@ -374,7 +374,7 @@ A list of the designated University employees who, as counselors, confidential a
 
 * Week 11 [03/26 (lab), 03/28 (lab)]
 
-* Week 12 [04/02 (lecture), 04/04 (lab)]
+* Week 12 [04/02 (lecture), 04/04 (speaker)]
   + **Reading**: Introduction to R Shiny
   + **Lab 4** due on 04/05 at 11:59 pm
   + **Lab 5** assigned this week, due on 04/19 at 11:59 pm 
