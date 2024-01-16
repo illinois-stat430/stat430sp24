@@ -9,13 +9,9 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - Welcome to STAT 430: Baseball Analytics
+ - Welcome to STAT 430: Baseball Analytics. Let's have a productive semester!
 
- - I have added a document that goes over the submission workflow, GitHub, R markdown code chunks, and terminal commands in detail. This document is called week1_supplemental_materials.md and it is available to you in 
-
-```
-lectures/week1_data
-```
+ - I have added a document that goes over the submission workflow, GitHub, R markdown code chunks, and terminal commands in detail. This document is called setup.md.
 
  - [Here](https://github.com/yihui/knitr-examples/blob/master/114-load-cache.md) is a game changing document for loading in quantities computed in the notes.
 
@@ -108,7 +104,6 @@ This is a reading, seminar, and project based course on the intersection of base
 
 
 
-
 ### Student Learning Outcomes
 
 Upon successful completion of this course students will be able to conduct methodologically strong data analyses that can answer questions of scientific interest, specifically the students will: 
@@ -125,25 +120,13 @@ Upon successful completion of this course students will be able to conduct metho
   
   - Apply version control software and develop reproducible technical reports
 
-
-### Getting Help in STAT 430
-
-You have many options to get help for this class:
-
- * Canvas- you can post questions in the discussion forum.
-
- * Email me at dje13@illinois.edu from your Illinois email account (@illinois.edu). I will not respond to a non-Illinois email account. Be specific with the topic of your question in the subject line.
-
- * Office hours - you can go to my office hours as described above.
- 
-
 ***
 
 ### Grading Breakdown
 
 | category | notes | points
 | :-- | :---- | :---- |
-| Attendance | 5 points each course; four free misses  | 130 points
+| Attendance | 5 points each course; 3 free misses  | 130 points
 | Labs | 100 points each | 500 points
 | Final Project | 50 points for approved project; 70 points for presentation (recorded summary); 250 for project materials and writeup | 370 points
 | total | | 1000 points
@@ -228,10 +211,69 @@ There will be no exams!
 
 
 
-
-
 ***
 
+### Course Communication
+
+We will use several forms of communication for this course. The website will be the one-stop-shop for all course information. Course announcements will be sent via email. Be sure you are regularly checking your `@illinois.edu` email account.
+
+If you would like to communicate with the course staff, our preferred methods of communication, in order, are:
+
+1. Office Hours
+2. Discussion Forum (Ed) 
+3. Email
+
+Email should largely be reserved for private matters. As much as possible, we would appreciate you asking questions about the course where we can respond so that other students benefit from your questions! It's cliche to say, but if you have a question, someone else is probably thinking it!
+
+### Office Hours
+
+For Spring 2024, all office hours will be held **online** via Zoom as seen above. Time listed are Champaign local time. The office hour schedule is always subject to change, but the times above are the general expectation. As such, the dates and times will be posted each week along with the course materials.
+
+Office hours are by far our preferred forum for discussing individual specific questions. In office hours, our response time will be literally instant. Also, since we are both present in the same physical location (or together on Zoom), follow-up is both expected, and easy. Using asynchronous forms of communication such as the discussion forum or email will have a slower response rate and a much lower communication bandwidth. In other words, please come to office hours!
+
+When joining office hours, be prepared to share your screen! Assuming you are having a technical or coding issue, the easiest way for us to assist is for you to **show** us the problem.
+
+Office hours will be a rather informal meeting. As such, if the instructor and a student are engaged in causal conversation not directly related to a pressing matter in STAT 430, like a homework question, please just jump into the conversation and interrupt! If office hours are "busy" the instructor may institute an informal queuing system, but the hope is to keep office hours more relaxed and informal.
+
+If you would like to schedule a private meeting outside of regular office hours, please send an email suggesting two possible times, on two different days.^[A total of four suggested times.] We have a preference for time-slots directly adjacent to current office hours. *Please also indicate a brief agenda for the meeting.* Requests to schedule a meeting at a time less than 24 hours in the future are unlikely to be granted.
+
+
+#### Discussion Forum
+
+This course will use [**Ed**](https://edstem.org/) as our discussion forum. Here is the link to join: https://edstem.org/us/join/gSeuar
+
+Ed access and login information was sent via email.
+
+Please register your account with your University email.^[Accounts registered with an email other than an `@illinois.edu` account will be removed.]
+
+I generally check Ed within a day or two after it alerts me that a new topic has been posted. Thus you can often expect a response within three or so business days. If you need a quicker response, you should consider office hours as an alternative.
+
+
+The course staff would strongly prefer the use of Ed to GroupMe or similar services not officially supported by the course. The course staff feels that a GroupMe may exclude members of the course, whereas all are welcome on Ed. Services like GroupMe also exclude course staff, which while understandable, tends to promote an adversarial relationship between students and their instructors. **We're all on the same team, so let's act like it.**
+
+
+Private posts have been disabled. Any private matters should be discussed over email where your identity is known and private. Some anonymous posting is disabled. You may post anonymously to your classmates, but not the course staff.
+
+
+#### Code Discussion
+
+If your question is technical in nature, there are several steps you can take to insure a speedy response. 
+
+First and foremost, you should ask Google before you ask the course staff. Take the error message you obtained and search it with Google. The ability to solve problems this way is an extremely value skill, possibly one of the most important you should learn (but are not taught) during your academic career. Make a legitimate effort to solve the problem on your own. You won’t always be able to, and if you can’t, post on Ed. (Or consider stopping by office hours.)
+
+If you need to ask the course staff, include the following in your discussion forum post:
+
+-  **All** code that is required to re-create the error.
+  - Staff should be able to run your code, without any modification, and obtain the same error or output.
+- The exact error message received.
+
+
+Do not only use screenshots of code and error messages to communicate about them. Copy paste them so that others can copy-paste them as well. Posts containing screenshots of code will likely be deleted.
+
+
+**In this course, for everything expect final projects, we greatly prefer over-sharing to under-sharing code. We would rather everyone learn from others' "mistakes" than have everyone experience the same issues over and over again.** 
+
+***
 
 ### Policies
 
