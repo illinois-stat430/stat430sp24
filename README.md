@@ -15,6 +15,8 @@ See the lectures directory for course notes and slides. See the labs directory f
 
  - [Here](https://github.com/yihui/knitr-examples/blob/master/114-load-cache.md) is a game changing document for loading in quantities computed in the notes.
 
+ - We are working on getting up to speed with GitHub
+
 
 ## Good Habits
 
