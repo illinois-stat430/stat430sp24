@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  22 JAN 2024 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  23 JAN 2024 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1146,48 +1146,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <6> not available
 ]
 \openout4 = `week2_wrangling_regression.vrb'.
 
-(./week2_wrangling_regression.vrb
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-0.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-30.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 30.
-) [19
+(./week2_wrangling_regression.vrb) [19
 
 ]
 \openout4 = `week2_wrangling_regression.vrb'.
@@ -1198,7 +1157,7 @@ Package textcomp Info: Symbol \textasciigrave not provided by
 \openout4 = `week2_wrangling_regression.vrb'.
 
 (./week2_wrangling_regression.vrb
-<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-14-1.pdf, id=167,
+<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-14-1.pdf, id=166,
  689.57625pt x 463.7325pt>
 File: week2_wrangling_regression_files/figure-beamer/unnamed-chunk-14-1.pdf Gra
 phic file (type pdf)
@@ -1212,7 +1171,7 @@ Package pdftex.def Info: week2_wrangling_regression_files/figure-beamer/unnamed
 \openout4 = `week2_wrangling_regression.vrb'.
 
 (./week2_wrangling_regression.vrb
-<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-15-1.pdf, id=182,
+<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-15-1.pdf, id=181,
  689.57625pt x 400.49625pt>
 File: week2_wrangling_regression_files/figure-beamer/unnamed-chunk-15-1.pdf Gra
 phic file (type pdf)
@@ -1223,13 +1182,13 @@ Package pdftex.def Info: week2_wrangling_regression_files/figure-beamer/unnamed
 ) [22
 
  <./week2_wrangling_regression_files/figure-beamer/unnamed-chunk-15-1.pdf>]
-<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-16-1.pdf, id=196,
+<week2_wrangling_regression_files/figure-beamer/unnamed-chunk-16-1.pdf, id=195,
  659.46375pt x 386.44376pt>
 File: week2_wrangling_regression_files/figure-beamer/unnamed-chunk-16-1.pdf Gra
 phic file (type pdf)
 <use week2_wrangling_regression_files/figure-beamer/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: week2_wrangling_regression_files/figure-beamer/unnamed
--chunk-16-1.pdf  used on input line 685.
+-chunk-16-1.pdf  used on input line 666.
 (pdftex.def)             Requested size: 307.29147pt x 180.07187pt.
 [23
 
@@ -1245,33 +1204,31 @@ Package pdftex.def Info: week2_wrangling_regression_files/figure-beamer/unnamed
 
 (./week2_wrangling_regression.aux) ) 
 Here is how much of TeX's memory you used:
- 26255 strings out of 478268
- 502724 string characters out of 5846347
- 817309 words of memory out of 5000000
- 43679 multiletter control sequences out of 15000+600000
- 510485 words of font info for 134 fonts, out of 8000000 for 9000
+ 26214 strings out of 478268
+ 501486 string characters out of 5846347
+ 816309 words of memory out of 5000000
+ 43647 multiletter control sequences out of 15000+600000
+ 509875 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,122p,1023b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/e
-nc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/en
-c/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-m
-athsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/u
-hvro8a.pfb>
-Output written on week2_wrangling_regression.pdf (23 pages, 2652419 bytes).
+nc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-
+mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helveti
+c/uhvro8a.pfb>
+Output written on week2_wrangling_regression.pdf (23 pages, 2634763 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
+ 280 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
  68 named destinations out of 1000 (max. 500000)
  41028 words of extra memory for PDF output out of 42996 (max. 10000000)
 

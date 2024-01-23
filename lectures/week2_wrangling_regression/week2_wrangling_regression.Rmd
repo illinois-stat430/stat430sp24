@@ -81,7 +81,7 @@ Teams %>%
 				 HA, HRA, BBA, SOA, IPouts, FP, R, RA) %>% 
 	filter(yearID >= 1900) %>%
 	replace_na(list(HBP = 0, SF = 0)) %>% 
-	mutate(RD = (R - RA) / G, X1B = H - (X2B + X3B + HR)) %>% 
+	mutate(RD = (R - RA) / G) %>% 
 	arrange(desc(RD)) %>% 
 	head(10)
 ```
@@ -97,12 +97,11 @@ dat = Teams %>%
 				 HA, HRA, BBA, SOA, IPouts, FP, R, RA) %>% 
 	filter(yearID >= 1900) %>%
 	replace_na(list(HBP = 0, SF = 0)) %>% 
-	mutate(RD = (R - RA) / G, X1B = H - (X2B + X3B + HR)) %>% 
+	mutate(RD = (R - RA) / G) %>% 
 	mutate(OBP = (H + BB + HBP)/(AB + BB + HBP + SF)) %>%  
-	mutate(SLG = (X1B + 2*X2B + 3*X3B + 4*HR)/AB) %>% 
+	mutate(SLG = (H + X2B + 2*X3B + 3*HR)/AB) %>% 
 	mutate(OPS = OBP + SLG) %>% 
-	mutate(WHIP = 3*(HA + BBA)/IPouts) %>% 
-	mutate(FIP = 3*(13*HRA + 3*BBA - 2*SOA)/IPouts)
+	mutate(WHIP = 3*(HA + BBA)/IPouts)
 head(dat, 3)
 ```
 
@@ -263,12 +262,12 @@ Thus we have a well-fitting simple and useful model that provides satisfactory d
 
 ## 
 
-Investigate large residuals
+Investigate large residuals ($y - \hat{y}$)
 
 \vspace{12pt}
 
 \tiny
-```{r}
+```{r, warning=FALSE}
 dat_aug %>% filter(abs(.resid) >= 1) %>% 
 	select(yearID, franchID, W, RD, OPS, WHIP, FP, .resid, .fitted) %>% 
 	mutate(across(4:9, round, 3)) %>% 
