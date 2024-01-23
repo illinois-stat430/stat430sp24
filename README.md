@@ -11,18 +11,12 @@ See the lectures directory for course notes and slides. See the labs directory f
 
  - Welcome to STAT 430: Baseball Analytics. Let's have a productive semester!
 
- - I have added a document that goes over the submission workflow, GitHub, R markdown code chunks, and terminal commands in detail. This document is called setup.md.
-
- - [Here](https://github.com/yihui/knitr-examples/blob/master/114-load-cache.md) is a game changing document for loading in quantities computed in the notes.
-
- - We are working on getting up to speed with GitHub
+ - We are working on getting up to speed with GitHub, organization, data analysis, and regression
 
 
 ## Good Habits
 
  - obtain files from my **stat430sp24** repo before class starts
- - load in datasets and run the code in the notes before class starts
- - make sure that the notes compile 
  - use your computer's terminal, it is less user-friendly but it is MUCH faster
  - Stay centered and remember Hofstadter's Law, which describes the widely experienced difficulty of accurately estimating the time it will take to complete tasks of substantial complexity. **Hofstadter's Law**: It always takes longer than you expect, even when you take into account Hofstadter's Law.
  
