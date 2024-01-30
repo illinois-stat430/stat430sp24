@@ -11,7 +11,7 @@ See the lectures directory for course notes and slides. See the labs directory f
 
  - Welcome to STAT 430: Baseball Analytics. Let's have a productive semester!
 
- - We are working on getting up to speed with GitHub, organization, data analysis, and regression
+ - We will cover the relationship between runs and wins
 
 
 ## Good Habits
