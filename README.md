@@ -9,9 +9,7 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - Welcome to STAT 430: Baseball Analytics. Let's have a productive semester!
-
- - We will cover the relationship between runs and wins
+ - We will investigate run expectancy during week 4
 
 
 ## Good Habits
