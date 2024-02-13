@@ -9,7 +9,9 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - We will investigate run expectancy during week 4
+ -Jim Albert speaking on Tuesday, 02/13!
+
+ -Lab 2 due on Friday, 02/16 at 11:59pm
 
 
 ## Good Habits
