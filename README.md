@@ -9,7 +9,7 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- -Jim Albert speaking on Tuesday, 02/13!
+ -Jim Albert website: https://bayesball.github.io/
 
  -Lab 2 due on Friday, 02/16 at 11:59pm
 
