@@ -9,9 +9,11 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- -Jim Albert website: https://bayesball.github.io/
+ - Jim Albert website: https://bayesball.github.io/
 
- -Lab 2 due on Friday, 02/16 at 11:59pm
+ - Lab 2 due on Friday, 02/16 at 11:59pm
+ 
+ - retrosheet strater script added to repo
 
 
 ## Good Habits
