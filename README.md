@@ -14,6 +14,8 @@ See the lectures directory for course notes and slides. See the labs directory f
  - Lab 2 due on Friday, 02/16 at 11:59pm
  
  - retrosheet starter script added to repo
+ 
+ - Credit to Aidan Glickman: For people on Mac, you don’t actually have to build chadwick from source. First, install Homebrew (https://brew.sh/) Then run `brew install chadwick` from the terminal. For Mac and PC people, Jim Albert made an [updated blogpost](https://bayesball.github.io/VB/Getting_Retrosheet_Files.html) with better tools for pulling retro sheet data.
 
 
 ## Good Habits
