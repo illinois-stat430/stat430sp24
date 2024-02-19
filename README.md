@@ -9,9 +9,13 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+ - Alan Nathan speaking on 02/20!
+
  - Jim Albert website: https://bayesball.github.io/
 
- - Lab 2 due on Friday, 02/16 at 11:59pm
+ - Lab 3 added to repo. 1968 retrosheet data is included in lab 3 directory.
+
+ - Lab 2 due on Wednesday, 02/21 at 11:59pm
  
  - retrosheet starter script added to repo
  
@@ -346,26 +350,26 @@ A list of the designated University employees who, as counselors, confidential a
 
 * Week 5 [02/13 (speaker), 02/15 (lab)]
   + **Lab 2** due on 02/16 at 11:59 pm
-  + **Lab 3** assigned this week, due on 03/08 at 11:59 pm
   + **Speaker**: Jim Albert on Tuesday, 02/13.
 
 * Week 6 [02/20 (speaker), 02/22 (lecture)]
   + **Reading**: course slides
   + **Reading**: CH 9: Simulation in Analyzing Baseball Data with R 
   + **Speaker**: Alan Nathan on Tuesday, 02/20.
+  + **Lab 3** assigned this week, due on 03/08 at 11:59 pm
   
-* Week 7 [02/27 (lab), 02/29 (lecture)]
+* Week 7 [02/27 (lab), 02/29 (lab)]
+  
+* Week 8 [03/05 (lecture), 03/07 (lab)]
   + **Reading**: course slides
   + **Reading**: CH 12: Batted Ball Data from Statcast in Analyzing Baseball Data with R
-  
-* Week 8 [03/05 (lab), 03/07 (lab)]
   + **Lab 3** due on 03/08 at 11:59 pm
   + **Lab 4** assigned this week, due on 04/05 at 11:59 pm
 
 * Week 9   
   + **Spring Break**
   
-* Week 10 [03/19 (lab), 03/21 (lab)]
+* Week 10 [03/19 (lab), 03/21 (lecture)]
   + **Reading**: course slides
   + **Reading**: CH 12: Batted Ball Data from Statcast in Analyzing Baseball Data with R
 
