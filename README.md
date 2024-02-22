@@ -9,11 +9,11 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - Alan Nathan speaking on 02/20!
+ - Markov Chain simulation notes added to repo
 
  - Jim Albert website: https://bayesball.github.io/
 
- - Lab 3 added to repo. 1968 retrosheet data is included in lab 3 directory.
+ - Lab 3 added to repo. 1968 retrosheet data is included in lab3 directory.
 
  - Lab 2 due on Wednesday, 02/21 at 11:59pm
  
