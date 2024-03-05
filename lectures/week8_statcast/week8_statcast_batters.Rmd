@@ -465,7 +465,7 @@ mean(abs(bat_aug_m1$resid))
 
 ##
 
-The more elaborate model offers relatively poor out-of-sample prediction for 2021 player HR totals.
+The more elaborate model offers much better out-of-sample prediction for 2021 player HR totals.
 
 \vspace{12pt}
 
