@@ -114,12 +114,7 @@ spray_chart(soto_bip, aes(x=hc_x, y=-hc_y, color=events)) +
 
 We load in a subset of the statcast data since the full data is too large to compile. 
 
-Follow the steps below to obtain a manageable subset of the statcast data containing 
-just balls in play: 
-
-1. Scrape statcast data locally. You can use functions in the statcast\_scraper.R file.
-2. Follow the steps in the statcast\_supplement.R file to get balls in play data.
-3. Load the data in R markdown using the code below (remember to set cache = TRUE).
+Follow the code in the create\_sc\_bip\_small.R file to obtain a manageable subset of the statcast data containing just balls in play. 
 
 \vspace{12pt}
 
@@ -385,4 +380,102 @@ cor(sc_split_wide %>% select(`2021`,`2022`) %>% filter(complete.cases(.)))[1,2]
 ```
 
 
+## Poisson regression for modeling HR counts of full time players
 
+In this analysis we load in a data set containing a mix of traditional statistics and statcast variables (means and quantiles of statcast variables).
+
+\vspace{12pt}
+
+\tiny
+```{r, message=FALSE, warning=FALSE}
+bat = read_csv("statcastHR.csv")
+## training set
+bat_not_2021 = bat %>% filter(year < 2021)
+## testing set
+bat_2021 = bat %>% filter(year == 2021)
+head(bat_not_2021, 3)
+colnames(bat_not_2021)
+```
+
+##
+
+We first consider a model which uses means of launch angle and exist velocity as well as some other key variables such as a correction for the 2019 season in which home runs were plentiful and a park-factor variable.
+
+\vspace{12pt}
+
+\small
+```{r}
+m1 = glm(HR ~ I(year == 2019) + BPF + 
+           mean_exit_velo + mean_launch_angle,
+         data = bat_not_2021, 
+         family = "poisson")
+```
+
+
+## 
+
+\tiny
+```{r}
+summary(m1)
+```
+## 
+
+We now consider a more elaborate model involving quantiles of launch angle and exit velocity.
+
+\vspace{12pt}
+
+\small
+```{r}
+m2 = glm(HR ~ I(year == 2019) + BPF + 
+           launch_angle_75 + launch_angle_70 + 
+           launch_angle_65 +  exit_velo_85 + 
+           exit_velo_80 + exit_velo_75 + 
+           I(launch_angle_75*exit_velo_85) + 
+           I(launch_angle_70*exit_velo_80), 
+         data = bat_not_2021, 
+         family = poisson(link = "sqrt"))
+AIC(m1); AIC(m2)
+```
+
+
+##
+
+\tiny
+```{r}
+summary(m2)
+```
+
+
+## 
+
+The simple model offers relatively poor out-of-sample prediction for 2021 player HR totals.
+
+\vspace{12pt}
+
+\small
+```{r}
+bat_aug_m1 = bat_not_2021 %>% 
+  mutate(fitted_HR = predict(m1, type = "response")) %>% 
+  mutate(resid = HR - fitted_HR) %>% 
+  dplyr::select(name:AB, fitted_HR, resid) %>% 
+  arrange(desc(resid))
+sqrt(mean(bat_aug_m1$resid^2))
+mean(abs(bat_aug_m1$resid))
+```
+
+##
+
+The more elaborate model offers relatively poor out-of-sample prediction for 2021 player HR totals.
+
+\vspace{12pt}
+
+\small
+```{r}
+bat_aug_m2 = bat_not_2021 %>% 
+  mutate(fitted_HR = predict(m2, type = "response")) %>% 
+  mutate(resid = HR - fitted_HR) %>% 
+  dplyr::select(name:AB, fitted_HR, resid) %>% 
+  arrange(desc(resid))
+sqrt(mean(bat_aug_m2$resid^2))
+mean(abs(bat_aug_m2$resid))
+```
