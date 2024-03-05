@@ -21,13 +21,16 @@ header-includes:
 
 This lecture is meant to supplement Chapter 12 in your textbook.
 
+\vspace{12pt}
+
+Check out [baseballsavant.mlb.com](https://baseballsavant.mlb.com/) for statcast data and statistics and visualizations constructed from statcast data.
 
 
 ## Obtaining Statcast data
 
 Can use the \texttt{scrape\_statcast\_savant} function in the \texttt{baseballr} package for up to 40000 observations.
 
-For the entire 2017-2022 (2020 excluded) statcast data set: https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s
+For the entire 2017-2022 statcast data set (2020 excluded): https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s
 
 Downloading the full statcast data set will take some time! 
 
