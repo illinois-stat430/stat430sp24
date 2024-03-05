@@ -30,7 +30,11 @@ Check out [baseballsavant.mlb.com](https://baseballsavant.mlb.com/) for statcast
 
 Can use the \texttt{scrape\_statcast\_savant} function in the \texttt{baseballr} package for up to 40000 observations.
 
+\vspace{12pt}
+
 For the entire 2017-2022 statcast data set (2020 excluded): https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s
+
+\vspace{12pt}
 
 Downloading the full statcast data set will take some time! 
 
