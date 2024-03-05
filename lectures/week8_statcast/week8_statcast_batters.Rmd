@@ -461,8 +461,8 @@ The simple model offers relatively poor out-of-sample prediction for 2021 player
 
 \small
 ```{r}
-bat_aug_m1 = bat_not_2021 %>% 
-  mutate(fitted_HR = predict(m1, type = "response")) %>% 
+bat_aug_m1 = bat_2021 %>% 
+  mutate(fitted_HR = predict(m1, type = "response", newdata = bat_2021)) %>% 
   mutate(resid = HR - fitted_HR) %>% 
   dplyr::select(name:AB, fitted_HR, resid) %>% 
   arrange(desc(resid))
@@ -478,8 +478,8 @@ The more elaborate model offers much better out-of-sample prediction for 2021 pl
 
 \small
 ```{r}
-bat_aug_m2 = bat_not_2021 %>% 
-  mutate(fitted_HR = predict(m2, type = "response")) %>% 
+bat_aug_m2 = bat_2021 %>% 
+  mutate(fitted_HR = predict(m2, type = "response", newdata = bat_2021)) %>% 
   mutate(resid = HR - fitted_HR) %>% 
   dplyr::select(name:AB, fitted_HR, resid) %>% 
   arrange(desc(resid))
