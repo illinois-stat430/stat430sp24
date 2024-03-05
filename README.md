@@ -9,19 +9,15 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+ - week 8 statcast notes added to repo. 
+
+ - Link to 2017-2022 (2020 excluded) statcast data [here](https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s). 
+
  - [Here](https://github.com/yihui/knitr-examples/blob/master/114-load-cache.md) is a game changing document for loading in quantities computed in the notes.
 
- - Markov Chain simulation notes added to repo
+ - Markov Chain simulation notes added to repo.
 
  - Jim Albert website: https://bayesball.github.io/
-
- - Lab 3 added to repo. 1968 retrosheet data is included in lab3 directory.
-
- - Lab 2 due on Wednesday, 02/21 at 11:59pm
- 
- - retrosheet starter script added to repo
- 
- - Credit to Aidan Glickman: For people on Mac, you don’t actually have to build chadwick from source. First, install Homebrew (https://brew.sh/) Then run `brew install chadwick` from the terminal. For Mac and PC people, Jim Albert made an [updated blogpost](https://bayesball.github.io/VB/Getting_Retrosheet_Files.html) with better tools for pulling retro sheet data.
 
 
 ## Good Habits
