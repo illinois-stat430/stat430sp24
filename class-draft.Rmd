@@ -1,0 +1,48 @@
+---
+title: "All-time draft"
+output: html_document
+---
+
+```
+Rules: 
+
+1. Snake draft 
+
+2. Teams will play against each other for 8 consecutive seasons
+
+3. All players are assumed to have grown up in a common era and have all advantages/disadvantages of that era
+
+4. Injuries matter
+
+5. PED seasons do not count; a failed PED test results in a lost season
+
+6. Pretend that WWII and other wars did not happen
+
+7. Players will not be added/subtracted from rosters, a common good bench will be assumed
+```
+
+```{r}
+set.seed(13)
+sample(c("Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6", "Prof Eck"))
+```
+
+
+| position | Team 3 | Team 5 | Team 2 | Team 1 | Team 6 | Prof Eck | Team 4 |
+| :--- | :--- | :--- | :----- | :---- |  :---- | :---- | :---- |
+| C  | Johnny Bench  | Gary Carter | Mike Piazza  | Ivan Rodriguez | Carlton Fisk | Josh Gibson | Buster Posey |  |
+| 1B | David Ortiz   | Frank Thomas | Lou Gehrig | Jeff Bagwell | Willie McCovey  | Albert Pujols | Jimmie Foxx  |
+| 2B | Robinson Cano  | Eddie Collins | Jackie Robinson | Craig Biggio | Roberto Alomar  | Joe Morgan  | Rogers Hornsby |
+| 3B | Miguel Cabrera | Eddie Mathews | Wade Boggs  | Adrian Beltre | A Rod  | Mike Schmidt | Chipper Jones  |  |
+| SS | Ernie Banks  | Honus Wagner | Cal Ripken Jr | Derek Jeter  | Ozzie Smith  | Arky Vaughan | Robin Yount |  |
+| LF | Pete Rose  | Rickey Henderson | Carl Yastrzemski | Barry Bonds | Ted Williams  | Stan Musial | Ty Cobb |  |
+| CF | Ken Griffey Jr | Willie Mays | Andruw Jones | Joe DiMaggio  | Mickey Mantle | Carlos Beltran  | Mike Trout  |  |
+| RF | Ichiro  | Tris Speaker | Roberto Clemente | Tony Gwynn | Hank Aaron | Mookie Betts  | Aaron Judge  |  |
+| DH | Babe Ruth | Frank Robinson | Juan Soto | Jim Thome | Edgar Martinez | Joey Votto  | Bartolo Colon |  |
+|    |  |  |  |  |  |  |  |  |
+| SP | Shohei Ohtani  | Clayton Kershaw | Randy Johnson | Justin Verlander | Sandy Koufax  | Lefty Grove | Greg Maddux  |
+| SP | Gaylord Perry  | Pedro Martinez | Cy Young | Bob Gibson | Max Scherzer | Roger Clemens | Nolan Ryan |
+| SP | Roy Halladay  | Pete Alexander | Zack Greinke | Steve Carlton | Juan Marichal | Walter Johnson | Warren Spahn |  |
+| SP | Gerrit Cole  | Kid Nichols | Phil Niekro | Johan Santana | Bob Feller | Tom Seaver | Mordecai Brown  |  |
+|  P | Trevor Bauer  | Dennis Eckersley  | Hoyt Wilhelm | Mariano Rivera | Curt Schilling | Jake deGrom  | Trevor Hoffman |  |
+|  P | Madison Bumgarner  | Mark Buehrle | Old Hoss Radbourn | Tom Glavine | Billy Wagner |Aroldis Chapman  | Craig Kimbrel |  |
+

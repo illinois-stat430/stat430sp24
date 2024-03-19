@@ -9,6 +9,8 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+ - class draft results are posted!
+
  - Lab 4 added to repo. It is due on 04/05 at 11:59 pm.
 
  - week 8 statcast notes added to repo. 
