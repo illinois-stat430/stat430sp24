@@ -371,21 +371,22 @@ A list of the designated University employees who, as counselors, confidential a
 * Week 9   
   + **Spring Break**
   
-* Week 10 [03/19 (lab), 03/21 (lecture)]
+* Week 10 [03/19 (all-time draft), 03/21 (lab)]
+  + **Reading**: CH 12: Batted Ball Data from Statcast in Analyzing Baseball Data with R
+
+* Week 11 [03/26 (lecture), 03/28 (lab)]
   + **Reading**: course slides
   + **Reading**: CH 12: Batted Ball Data from Statcast in Analyzing Baseball Data with R
 
-* Week 11 [03/26 (lab), 03/28 (lab)]
-
-* Week 12 [04/02 (lecture), 04/04 (speaker)]
-  + **Reading**: Introduction to R Shiny
+* Week 12 [04/02 (lab), 04/04 (speaker)]
   + **Lab 4** due on 04/05 at 11:59 pm
   + **Lab 5** assigned this week, due on 04/19 at 11:59 pm 
   + Project proposal assigned this week, due on 04/19 at 11:59 pm
   + **Speaker**: Julia Warner and Charlie Young on Thursday, 04/04.
 
-* Week 13 [04/09 (speaker), 04/11 (lab)]
+* Week 13 [04/09 (speaker), 04/11 (lecture)]
   + **Speaker**: David Dalpiaz on Tuesday, 04/09.  
+  + **Reading**: Introduction to R Shiny
 
 * Week 14 [04/16 (lab), 04/18 (lab)]
   + **Lab 5** due on 04/19 at 11:59 pm
