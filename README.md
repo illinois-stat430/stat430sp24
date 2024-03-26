@@ -9,6 +9,8 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+ - week 11 seam notes added to repo.
+
  - class draft results are posted!
 
  - Lab 4 added to repo. It is due on 04/05 at 11:59 pm.
@@ -18,8 +20,6 @@ See the lectures directory for course notes and slides. See the labs directory f
  - Link to 2017-2022 (2020 excluded) statcast data [here](https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s). Note that lab 4 only requires you to use 2017-2021 data.
 
  - [Here](https://github.com/yihui/knitr-examples/blob/master/114-load-cache.md) is a game changing document for loading in quantities computed in the notes.
-
- - Markov Chain simulation notes added to repo.
 
  - Jim Albert website: https://bayesball.github.io/
 
