@@ -9,6 +9,8 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+  - Charlie Young's email: 542charlieyoung@gmail.com
+
  - week 11 seam notes added to repo.
 
  - class draft results are posted!
