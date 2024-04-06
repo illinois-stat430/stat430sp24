@@ -24,14 +24,7 @@ The app that you are going to create is largely up to you, but it should be clos
  
  - You can create a Shiny app that uses the \texttt{simulate\_half\_inning} function from the course notes to estimate a 2016 or 1968 team-specific RE24 matrix using Markov Chain simulation.
  
- - You can create a Shiny app that displays annual averages of \texttt{release\_spin\_rate}, 
-\texttt{effective\_speed}, 
-\texttt{plate\_x}, 
-\texttt{plate\_z}, 
-\texttt{pfx\_x}, 
-\texttt{pfx\_z}, 
-\texttt{release\_x}, 
-and \texttt{release\_z}, and computes the annual pitch type percentages for a user-selected pitcher. The graphic should allow one to clearly see how these annual averages change over time. It is best to display all nine plots in a single grid of plots rather than printing off nine separate plots. This can be achieved using the \texttt{grid.arrange} function in the \texttt{gridExtra} package. 
+ - You can create a Shiny app that displays annual averages of key pitching statcast variables, and computes the annual pitch type percentages for a user-selected pitcher. The graphic should allow one to clearly see how these annual averages change over time. 
 
  - Something else that was covered in class.
 
