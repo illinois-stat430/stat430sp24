@@ -9,13 +9,13 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
-  - Charlie Young's email: 542charlieyoung@gmail.com
+ - Lab 5 added to repo. It is due on 04/19 at 11:59 pm.
+
+ - Charlie Young's email: 542charlieyoung@gmail.com
 
  - week 11 seam notes added to repo.
 
  - class draft results are posted!
-
- - Lab 4 added to repo. It is due on 04/05 at 11:59 pm.
 
  - week 8 statcast notes added to repo. 
 
