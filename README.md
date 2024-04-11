@@ -9,15 +9,13 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - Lab 5 added to repo. It is due on 04/19 at 11:59 pm.
+ - Week 13 R shiny notes added to repo. These notes are brief.
+
+ - Lab 5 added to repo. It is due on 04/19 at 11:59 pm. Project proposals also due on 04/19 at 11:59 pm.
 
  - Charlie Young's email: 542charlieyoung@gmail.com
 
- - week 11 seam notes added to repo.
-
- - class draft results are posted!
-
- - week 8 statcast notes added to repo. 
+ - Class draft results are posted!
 
  - Link to 2017-2022 (2020 excluded) statcast data [here](https://uofi.app.box.com/file/1449126291821?s=we34tcz4wqdu063zpzuwjvb4r6u9j21s). Note that lab 4 only requires you to use 2017-2021 data.
 
