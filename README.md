@@ -9,9 +9,7 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
- - Week 13 R shiny notes added to repo. These notes are brief.
-
- - Lab 5 added to repo. It is due on 04/19 at 11:59 pm. Project proposals also due on 04/19 at 11:59 pm.
+ - Era-adjustment notes added to repo.
 
  - Charlie Young's email: 542charlieyoung@gmail.com
 
