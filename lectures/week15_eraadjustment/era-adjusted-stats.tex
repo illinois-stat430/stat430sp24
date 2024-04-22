@@ -1,0 +1,647 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz-cd}
+\usepackage{url}
+\definecolor{foreground}{RGB}{255,255,255}
+\definecolor{background}{RGB}{34,28,54}
+\definecolor{title}{RGB}{105,165,255}
+\definecolor{gray}{RGB}{175,175,175}
+\definecolor{lightgray}{RGB}{225,225,225}
+\definecolor{subtitle}{RGB}{232,234,255}
+\definecolor{hilight}{RGB}{112,224,255}
+\definecolor{vhilight}{RGB}{255,111,207}
+\setbeamertemplate{footline}[page number]
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Comparing baseball players across eras via the novel Full House Model},
+  pdfauthor={Daniel J. Eck},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Comparing baseball players across eras via the novel Full House
+Model}
+\author{Daniel J. Eck}
+\date{}
+\institute{Department of Statistics\\
+University of Illinois\\
+\strut \\
+\strut \\
+joint work with:
+\href{https://www.linkedin.com/in/shen-yan-87a09812b/}{Shen Yan},
+\href{https://history.illinois.edu/directory/profile/burgosjr}{Adrian
+Burgos Jr.}, and \href{https://chriskinson.com/}{Christopher Kinson}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\Proj}{\textbf{P}}
+\newcommand{\Hcal}{\mathcal{H}}
+\newcommand{\rootn}{\sqrt{n}}
+\newcommand{\p}{\mathbf{p}}
+\newcommand{\E}{\text{E}}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\Cov}{\text{Cov}}
+\newcommand{\mubf}{\bm{\mu}}
+\newcommand{\logit}{\text{logit}}
+
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\end{frame}
+
+\begin{frame}{Background}
+\protect\hypertarget{background}{}
+The first box score appeared in 1859.
+
+\vspace{12pt}
+
+Major League Baseball is, and always has been, a game dominated by
+statistics.
+
+\vspace{12pt}
+
+These statistics can be used to compare the performances of players.
+
+\vspace{12pt}
+
+However, as will be made clear, baseball statistics are not suitable for
+cross-era comparisons of players.
+
+\vspace{12pt}
+
+We will attempt the rectify this issue and construct suitable statistics
+that can be used to compare players across eras.
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+\includegraphics{Career_averages.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-1}{}
+\includegraphics{rankings.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-2}{}
+\includegraphics{Chance.png}
+
+Results are summarised
+\href{https://deck13.shinyapps.io/challenging_baseball_nostalgia/}{here}.
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-3}{}
+\includegraphics{other_career_rankers.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-4}{}
+\includegraphics{other_methods_new.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-5}{}
+\begin{center}
+So what is going on here!?
+\end{center}
+\end{frame}
+
+\begin{frame}{Enter
+\href{https://en.wikipedia.org/wiki/Stephen_Jay_Gould}{Stephen Jay
+Gould}}
+\protect\hypertarget{enter-stephen-jay-gould}{}
+In his 1996 book
+``\href{https://en.wikipedia.org/wiki/Full_House:_The_Spread_of_Excellence_from_Plato_to_Darwin}{Full
+House: The Spread of Excellence from Plato to Darwin},'' Gould argued
+that there is a right wall of human excellence and that the greatest
+players stood right against that wall. He said that as time has gone on,
+the average MLB player has approached that wall.
+
+\vspace{12pt}
+
+He also said that baseball is balance between hitting and pitching, and
+the balance has been preserved as both have gotten better.
+
+\vspace{12pt}
+
+The variation in success has shrunk as time has gone on.
+
+\vspace{12pt}
+
+It is therefore hard for the modern great players to stand out above
+their peers to the same degree as the old time players.
+
+\vspace{12pt}
+
+These dynamics have proven quite challenging to existing statistical
+models.
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-6}{}
+\includegraphics{4moments.png}
+\end{frame}
+
+\begin{frame}{Introducing the Full House Model}
+\protect\hypertarget{introducing-the-full-house-model}{}
+Our methodology is a crystallization of the conceptual ideas put forward
+by evolutionary Stephen Jay Gould.
+
+\vspace{12pt}
+
+We name our model the Full House Model in his honor.
+\end{frame}
+
+\begin{frame}{Structure}
+\protect\hypertarget{structure}{}
+We will suppose the following structure:
+
+\begin{itemize}
+\tightlist
+\item
+  There are seasons indexed by \(i\).
+\item
+  Each season has \(n_i\) active MLB players.
+\item
+  These active MLB players are a part of a population of \(N_i > n_i\)
+  potential eligible MLB players.
+\end{itemize}
+
+\vspace{12pt}
+
+We further suppose that:
+
+\begin{itemize}
+\tightlist
+\item
+  Every potential eligible MLB players in the population has a iid
+  latent talent \(X_{i,1},\ldots,X_{i,N_i} \sim F_{X}\).
+\item
+  We know the MLB inclusion mechanism
+  \(g_i(X_{i,j}, \textbf{X}_{i,-j})\) for each season \(i\) and each
+  active MLB player \(j = 1,\ldots,N_i\).
+\item
+  We have observed \(Y_{i,1},\ldots,Y_{i,n_i} \sim F_{Y_i}\).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Structure}
+\protect\hypertarget{structure-1}{}
+Each season \(i\) is comprised of active MLB players with the highest
+latent talent. We specify that \[
+  g_i(X_{i,j}, \textbf{X}_{i,-j}) = 1(X_{i,j} \geq X_{i,(N_i-n_i+1)}).
+\]
+
+\vspace{12pt}
+
+We will further assume that latent talent and observed values exhibit a
+1-1 relationship, i.e.~we can form pairs \[
+  \left(Y_{i,(j)}, X_{i,(N_i-n_i+j)}\right).
+\]
+\end{frame}
+
+\begin{frame}{Estimating talent (parametric)}
+\protect\hypertarget{estimating-talent-parametric}{}
+We will estimate talent scores from the observed values Y using order
+statistic results and the probability integral transformation
+
+\[
+\begin{aligned}
+F_{Y_i}\left(Y_{i,(j)} \mid \theta_i\right) & \sim U_{i,(j)}, & & F_{Y_i}\left(Y_{i,(j)} \mid \hat{\theta_i}\right) \approx U_{i,(j)}, \\
+\end{aligned}
+\] where \(U_{i,j} \sim U(0,1)\), and
+\(U_{i,(j)} \sim \operatorname{Beta}(j, n_i+1-j)\).
+
+\vspace{12pt}
+
+Our setup and these results permit us to estimate \(X\) as \[
+X_{i, (N_i-n_i+j)} = F_{X_{i, (N_i-n_i+j)}}^{-1}\left(F_{U_{i,(j)}}\left(F_{Y_{i}}\left(Y_{i,(j)} \mid \hat{\theta}_i\right)\right)\right) .
+\]
+
+\vspace{12pt}
+
+Talent is pegged to performance. The talent score is a quantile function
+evaluated at a probability value given by performance vs one's peers.
+\end{frame}
+
+\begin{frame}{Estimating cross-contextual statistics (parametric)}
+\protect\hypertarget{estimating-cross-contextual-statistics-parametric}{}
+Let \(l_{i, j}\) be the rank of \(X_{i,\left(N_{i}-n_{i}+j\right)}\)
+among the values \[
+\left\{X_{i,\left(N_{i}-n_{i}+j\right)}, X_{i^{\prime},\left(N_{i^{\prime}}-n_{i^{\prime}}+k\right)}: k=1, \ldots, n_{i^{\prime}}\right\} .
+\]
+
+\vspace{12pt}
+
+We can now reverse engineer the process on the previous slide.
+
+\vspace{12pt}
+
+We compute \(Y_{i, j, i^{\prime}}\), which is the statistic in system
+\(i^{\prime}\) corresponding to a component with talent score
+\(X_{i,\left(N_{i}-n_{i}+j\right)}\).
+\end{frame}
+
+\begin{frame}{MLB eligible population}
+\protect\hypertarget{mlb-eligible-population}{}
+Baseball started as a game played by people largely from the Northeast
+(NE) region of the United States of America as indicated in
+\href{https://journals.sagepub.com/doi/10.1177/1527002504268613}{Berry
+and Schmidt (2005)}.
+
+Our construction of the MLB eligible population will be pegged to the
+population of age 20-29 males from the NE region of the United States of
+America. Simply stated, the MLB eligible population will be \[
+  \frac{\text{NE and MW region population of age 20-29 males}}{\text{proportion of MLB players from NE and MW regions}} \times \text{adjustment}.
+\] Adjustments include the effects of:
+
+\begin{itemize}
+\tightlist
+\item
+  changing interest in baseball
+\item
+  wars
+\item
+  segregation and gradual integration of the MLB
+\item
+  globalization
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-7}{}
+\includegraphics{MLBeligiblepop.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-8}{}
+\includegraphics{interest_baseball.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-9}{}
+\includegraphics{regional_MLB_demo.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-10}{}
+\includegraphics{NEplusMW_MLB_demo.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-11}{}
+We plot the estimated baseball-interested adjusted population from
+Dominican Republic and Venezuela (solid red line) and the percentage of
+the MLB from these two countries (dashed black line).
+
+\includegraphics{DRVen_pop.png}
+\end{frame}
+
+\begin{frame}{Assumptions}
+\protect\hypertarget{assumptions}{}
+Before we present results we discuss specific modeling choices and
+assumptions:
+
+\begin{itemize}
+\tightlist
+\item
+  \(F_X \sim \text{Pareto}(\alpha)\) with \(\alpha = 1.16\). This choice
+  of \(\alpha\) reflects the Pareto Principle.
+\item
+  All careers are evaluated in a common context constructed from non
+  strike shortened NL seasons from 1977-1989.
+\end{itemize}
+
+\vspace{12pt}
+
+Additional baseball adjustments:
+
+\begin{itemize}
+\tightlist
+\item
+  handedness-specific park factors
+\item
+  smoothing results for individual players
+\item
+  games played and innings pitched adjustments
+\item
+  career trimming
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-12}{}
+\begin{center}
+Results
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-13}{}
+\includegraphics{eWAR-eJAWS-rankings.png}
+\end{frame}
+
+\begin{frame}{Top 10 batting careers by ebWAR}
+\protect\hypertarget{top-10-batting-careers-by-ebwar}{}
+\includegraphics{ebWAR_batters.png}
+\end{frame}
+
+\begin{frame}{Top 10 batting careers by ebWAR per 650 PA (minimum 5000
+PA)}
+\protect\hypertarget{top-10-batting-careers-by-ebwar-per-650-pa-minimum-5000-pa}{}
+\includegraphics{ebWARpPA_batters.png}
+\end{frame}
+
+\begin{frame}{Top 10 pitching careers by ebWAR}
+\protect\hypertarget{top-10-pitching-careers-by-ebwar}{}
+\includegraphics{ebWAR_pitchers.png}
+\end{frame}
+
+\begin{frame}{Top 10 pitching careers by ebWAR per 250 IP (minimum 3000
+IP)}
+\protect\hypertarget{top-10-pitching-careers-by-ebwar-per-250-ip-minimum-3000-ip}{}
+\includegraphics{ebWARpIP_pitchers.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-14}{}
+\includegraphics{2WAR_WARG.png}
+\end{frame}
+
+\begin{frame}{Player comparisons}
+\protect\hypertarget{player-comparisons}{}
+prime Tom Seaver (1969-75) vs prime Max Scherzer (2013-19)
+\end{frame}
+
+\begin{frame}{Seaver raw stats and accolades}
+\protect\hypertarget{seaver-raw-stats-and-accolades}{}
+\includegraphics{Seaver_raw.png}
+
+\begin{itemize}
+\tightlist
+\item
+  3 Cy Youngs
+\item
+  2.46 ERA (146 ERA+)
+\item
+  35 starts per season
+\item
+  274 IP per season
+\item
+  8.1 K/9
+\item
+  1.054 WHIP
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Seaver ``advanced'' stats}
+\protect\hypertarget{seaver-advanced-stats}{}
+\includegraphics{Seaver_advanced.png}
+
+\begin{itemize}
+\tightlist
+\item
+  53 WAR
+\item
+  7.6 WAR per season
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Scherzer raw stats and accolades}
+\protect\hypertarget{scherzer-raw-stats-and-accolades}{}
+\includegraphics{Scherzer_raw.png}
+
+\begin{itemize}
+\tightlist
+\item
+  3 Cy Youngs
+\item
+  2.82 ERA (149 ERA+)
+\item
+  32 starts per season
+\item
+  212 IP per season
+\item
+  11.3 K/9
+\item
+  0.981 WHIP
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Scherzer ``advanced'' stats}
+\protect\hypertarget{scherzer-advanced-stats}{}
+\includegraphics{Scherzer_advanced.png}
+
+\begin{itemize}
+\tightlist
+\item
+  45.7 WAR
+\item
+  6.5 WAR per season
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Totals}
+\protect\hypertarget{totals}{}
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+& 1969-75 Tom Seaver & 2013-19 Max Scherzer \\
+\midrule\noalign{}
+\endhead
+Cy Youngs & 3 & 3 \\
+WAR & 53 & 45.7 \\
+WAR per season & 7.6 & 6.5 \\
+ERA & 2.46 & 2.82 \\
+ERA+ & 146 & 149 \\
+GS per season & 35 & 32 \\
+IP per season & 274 & 212 \\
+K/9 & 8.1 & 11.3 \\
+WHIP & 1.054 & 0.981 \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-15}{}
+With era-adjusted statistics it is hard to say who has an edge
+
+\vspace{12pt}
+
+\includegraphics{SeavervScherzer.png}
+\end{frame}
+
+\begin{frame}{Commentary}
+\protect\hypertarget{commentary}{}
+Baseball has changed drastically as, in Gould speak, bad designs have
+been weeded out and the talent pool has expanded.
+
+\vspace{12pt}
+
+Racial inclusion helped create a paradoxical racial bias in measured
+statistics.
+
+\vspace{12pt}
+
+The Full House Model is a principled balance between how one performed
+``vs their peers'' and the size of the talent pool. This model is a
+remedy for the above bias.
+\end{frame}
+
+\begin{frame}{Way too soon teaser}
+\protect\hypertarget{way-too-soon-teaser}{}
+\includegraphics{top10NGL.png}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-16}{}
+\includegraphics{Pantheon.png}
+\end{frame}
+
+\begin{frame}{Thank you}
+\protect\hypertarget{thank-you}{}
+\href{https://arxiv.org/abs/2207.11332}{Here} is our preprint.
+
+\vspace{12pt}
+
+We have developed a fully functioning website that houses all of our
+results and contains several fun articles to supplement the work.
+\href{https://eckeraadjustment.web.illinois.edu/\#rankings}{Here} it is.
+
+\vspace{12pt}
+
+\begin{itemize}
+\tightlist
+\item
+  Contact me: \url{dje13@illinois.edu}
+\item
+  Department website: \url{https://publish.illinois.edu/danieleck/}
+\item
+  Baseball website: \url{https://ecklab.github.io/}
+\end{itemize}
+\end{frame}
+
+\end{document}
