@@ -1,0 +1,46 @@
+---
+title: "retrosheet_read_in"
+output: html_document
+date: "2024-03-18"
+---
+
+
+Reading in function from R script
+```{r,message=FALSE}
+library(tidyverse)
+
+source("fun1.R")
+```
+
+
+Using sourced function to download and format data in file system:
+```{r}
+year = 2017
+parse.retrosheet.pbp(year)
+```
+
+
+Reading in the data to RStudio
+```{r}
+fields = read_csv("fields.csv",show_col_types = FALSE)
+```
+
+```{r,warning=FALSE,message=FALSE}
+data = read_csv(paste0("download.folder/unzipped/all",year,".csv"),
+                col_names = pull(fields, Header),
+                na = character(),
+                show_col_types = FALSE)
+
+rosters = read_csv(paste0("download.folder/unzipped/roster",year,".csv"), 
+                   show_col_types = FALSE,
+                   ) %>% select(-c(`...1`)) %>%
+                         rename("Pos"=V7)
+```
+
+
+Viewing Data
+```{r}
+View(data)
+View(rosters)
+```
+

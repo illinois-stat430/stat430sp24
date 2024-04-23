@@ -9,6 +9,8 @@ See the lectures directory for course notes and slides. See the labs directory f
 
 # News
 
+ - A new script for obtaining retro sheet data is added to the course repo. Currently, this script only works for windows machines. Credit to Zach Larson.
+
  - Era-adjustment notes added to repo.
 
  - Charlie Young's email: 542charlieyoung@gmail.com
