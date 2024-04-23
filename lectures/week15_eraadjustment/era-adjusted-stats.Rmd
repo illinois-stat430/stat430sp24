@@ -348,7 +348,7 @@ Adjustments include the effects of:
 
 ##
 
-We plot the estimated baseball-interested adjusted population from Dominican Republic and Venezuela (solid red line) and the percentage of the MLB from these two countries (dashed black line).
+We plot the estimated baseball-interested adjusted population from Latin American countries (solid red line) and the percentage of the MLB from these countries (blue line).
 
 ![](DRVen_pop.png)
 
@@ -527,24 +527,25 @@ With era-adjusted statistics it is hard to say who has an edge
 
 
 
-<!-- ## Criticisms  -->
+## Mike Trout
 
-<!-- The referees criticised our construction of the MLB eligible population. They say we should have followed [MLB demographics data](https://sabr.org/bioproj/topic/baseball-demographics-1947-2016/). We agree with them. -->
-
-<!-- \vspace{12pt} -->
-<!-- Rankings and estimated career statistics will change. However, the top group remains.  -->
+![](Trout-career-WAR.png)
 
 
+## 
 
-<!-- ## Fun commentary -->
+![](TroutvsMantle.png)
 
-<!-- The debate is not over, if anything it is just beginning. -->
 
-<!-- \vspace{12pt} -->
-<!-- If you want to quabble about stuff like Walter Johnson being ranked behind Mike Mussina, then great, we support that. You may be right. -->
+##
 
-<!-- \vspace{12pt} -->
-<!-- But if you want to say that Babe Ruth is the greatest baseball to play the game, then we completely disagree with you and think you're drunk on nostalgia. -->
+![](TroutvsMays.png)
+
+
+
+## Mark Buehrle
+
+![](BuehrleHOF.png)
 
 
 

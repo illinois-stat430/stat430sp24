@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  22 APR 2024 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  23 APR 2024 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1430,29 +1430,61 @@ Package pdftex.def Info: SeavervScherzer.png  used on input line 595.
 (pdftex.def)             Requested size: 307.28833pt x 32.78535pt.
 [37
 
- <./SeavervScherzer.png>] [38
+ <./SeavervScherzer.png>]
+<Trout-career-WAR.png, id=310, 1034.86626pt x 418.56375pt>
+File: Trout-career-WAR.png Graphic file (type png)
+<use Trout-career-WAR.png>
+Package pdftex.def Info: Trout-career-WAR.png  used on input line 600.
+(pdftex.def)             Requested size: 307.28833pt x 124.28635pt.
+[38
 
-]
-<top10NGL.png, id=316, 639.38875pt x 254.9525pt>
-File: top10NGL.png Graphic file (type png)
-<use top10NGL.png>
-Package pdftex.def Info: top10NGL.png  used on input line 617.
-(pdftex.def)             Requested size: 307.29335pt x 122.5314pt.
+ <./Trout-career-WAR.png>]
+<TroutvsMantle.png, id=318, 1034.86626pt x 245.91875pt>
+File: TroutvsMantle.png Graphic file (type png)
+<use TroutvsMantle.png>
+Package pdftex.def Info: TroutvsMantle.png  used on input line 605.
+(pdftex.def)             Requested size: 307.28833pt x 73.02194pt.
 [39
 
- <./top10NGL.png>]
-<Pantheon.png, id=325, 872.25874pt x 795.97375pt>
-File: Pantheon.png Graphic file (type png)
-<use Pantheon.png>
-Package pdftex.def Info: Pantheon.png  used on input line 622.
-(pdftex.def)             Requested size: 286.16927pt x 261.14182pt.
-
-Overfull \vbox (0.9952pt too high) detected at line 622
- []
-
+ <./TroutvsMantle.png>]
+<TroutvsMays.png, id=327, 1034.86626pt x 402.50375pt>
+File: TroutvsMays.png Graphic file (type png)
+<use TroutvsMays.png>
+Package pdftex.def Info: TroutvsMays.png  used on input line 610.
+(pdftex.def)             Requested size: 307.28833pt x 119.51756pt.
 [40
 
- <./Pantheon.png>] [41
+ <./TroutvsMays.png>]
+<BuehrleHOF.png, id=335, 1034.86626pt x 180.675pt>
+File: BuehrleHOF.png Graphic file (type png)
+<use BuehrleHOF.png>
+Package pdftex.def Info: BuehrleHOF.png  used on input line 615.
+(pdftex.def)             Requested size: 307.28833pt x 53.64877pt.
+[41
+
+ <./BuehrleHOF.png>] [42
+
+]
+<top10NGL.png, id=349, 639.38875pt x 254.9525pt>
+File: top10NGL.png Graphic file (type png)
+<use top10NGL.png>
+Package pdftex.def Info: top10NGL.png  used on input line 637.
+(pdftex.def)             Requested size: 307.29335pt x 122.5314pt.
+[43
+
+ <./top10NGL.png>]
+<Pantheon.png, id=358, 872.25874pt x 795.97375pt>
+File: Pantheon.png Graphic file (type png)
+<use Pantheon.png>
+Package pdftex.def Info: Pantheon.png  used on input line 642.
+(pdftex.def)             Requested size: 286.16927pt x 261.14182pt.
+
+Overfull \vbox (0.9952pt too high) detected at line 642
+ []
+
+[44
+
+ <./Pantheon.png>] [45
 
 ]
 \tf@nav=\write5
@@ -1466,10 +1498,10 @@ Overfull \vbox (0.9952pt too high) detected at line 622
 
 (./era-adjusted-stats.aux) ) 
 Here is how much of TeX's memory you used:
- 30832 strings out of 478268
- 619715 string characters out of 5846347
+ 30880 strings out of 478268
+ 620483 string characters out of 5846347
  906407 words of memory out of 5000000
- 48173 multiletter control sequences out of 15000+600000
+ 48205 multiletter control sequences out of 15000+600000
  537492 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,122p,1015b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1490,10 +1522,10 @@ ist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2022/texmf-dist/fonts
 lic/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lms
 y6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></us
 r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on era-adjusted-stats.pdf (41 pages, 6971941 bytes).
+Output written on era-adjusted-stats.pdf (45 pages, 7313760 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 500000)
- 41123 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 41143 words of extra memory for PDF output out of 42996 (max. 10000000)
 
